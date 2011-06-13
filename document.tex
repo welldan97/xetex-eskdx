@@ -1,0 +1,43 @@
+%%% Загружаем заголовочный файл, который хранит все настройки и все
+%%% подгружаемые пакеты
+\input{input/header.tex}
+
+%%% Загружаем настройки пакета eskdx, там нужно заполнить информацию
+%%% о документе - ФИО авторов, название документов и т.п.
+\input{input/eskdx.tex}
+
+\begin{document}
+
+%%% Делаем титульник
+\maketitle
+
+%%% Делаем содержание
+\tableofcontents
+
+%%% С новой страницы
+\newpage
+%%% Введение пишется без цифры и добавляется в содержание
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+Здесь текст введения.
+
+\newpage
+\section{Заголовок}
+Здесь основной текст работы\cite{BookRef, ArticleRef, LinkRef}.
+
+%%% Заключение, так же как и введение выводим без цифры, добавляем в содержание
+\newpage
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+Здесь текст заключения
+
+%%% Далее выводим библиографию
+\newpage
+%%% Исправляем ошибку библиографии - «кавычка перед тире»
+%%% http://ru-tex.livejournal.com/105178.html?thread=801498
+\catcode`"\active\def"{\relax}
+\bibliographystyle{gost780s}
+\bibliography{bibliography}{}
+%%% Если пропадают инициалы, смотрите сюда:
+%%% http://plumbum-blog.blogspot.com/2010/10/bibtex-miktex-gost780s.html
+\end{document}

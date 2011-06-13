@@ -1,0 +1,43 @@
+%%% Здесь выбираются необходимые графы
+\documentclass[russian,utf8,pointsection,nocolumnsxix,nocolumnxxxi,nocolumnxxxii]{eskdtext}
+
+%%% Для работы со сложными формулами
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%%% Что бы использовать символ градуса (°) - \celsius
+\usepackage{gensymb}
+
+%%% Что бы работал eskdx и некоторые другие пакеты LaTeX
+\usepackage{xecyr}
+
+%%% Для работы шрифтов
+\usepackage{xltxtra}
+%%% Ставим Times New Roman - как основной шрифт
+\setmainfont[Mapping=tex-text]{Times New Roman}
+%%% Courier New - для моноширного текста
+\setmonofont[Scale=MatchLowercase]{Courier New}
+
+%%% Для того чтобы работали стандартные сочетания символов ---, --, << >> и т.п.
+\defaultfontfeatures{Mapping=tex-text}
+
+%%% Для работы с русскими текстами (расстановки переносов)
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\newfontfamily\russianfont{Times New Roman}
+
+%%% Для переноса составных слов
+\XeTeXinterchartokenstate=1
+\XeTeXcharclass `\- 24
+\XeTeXinterchartoks 24 0 ={\hskip\z@skip}
+\XeTeXinterchartoks 0 24 ={\nobreak}
+
+% Автоматически переносить на след. строку слова которые не убираются
+% в строке
+\sloppy
+
+%%% Для вставки рисунков
+\usepackage{graphicx}
+
+%%% Для вставки интернет ссылок, полезно в библиографии
+\usepackage{url}
