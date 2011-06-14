@@ -24,7 +24,7 @@ XeTeX ЕСКД Заготовка
 Полезные руководства для начинающих
 -----------------------------------
 
- -  [С. М. Львовский. Набор и вёрстка в системе LaTeX](www.mccme.ru/free-books/llang/newllang.pdf)
+ -  [С. М. Львовский. Набор и вёрстка в системе LaTeX](http://www.mccme.ru/free-books/llang/newllang.pdf)
  -  [Руководство пользователя ESKDx](http://eskdx.org.ua/downloads/eskdx-0.98.pdf)
  -  [Примеры использования ESKDx](http://eskdx.org.ua/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8FEskdx)
  
