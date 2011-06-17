@@ -32,6 +32,20 @@
 \XeTeXinterchartoks 24 0 ={\hskip\z@skip}
 \XeTeXinterchartoks 0 24 ={\nobreak}
 
+%%% Ставим подпись к рисункам. Вместо «рис. 1» будет «Рисунок 1»
+\addto{\captionsrussian}{\renewcommand{\figurename}{Рисунок}}
+%%% Убираем точки после цифр в заголовках
+\def\russian@capsformat{%
+  \def\postchapter{\@aftersepkern}%
+  \def\postsection{\@aftersepkern}%
+  \def\postsubsection{\@aftersepkern}%
+  \def\postsubsubsection{\@aftersepkern}%
+  \def\postparagraph{\@aftersepkern}%
+  \def\postsubparagraph{\@aftersepkern}%
+}
+
+
+
 % Автоматически переносить на след. строку слова которые не убираются
 % в строке
 \sloppy
