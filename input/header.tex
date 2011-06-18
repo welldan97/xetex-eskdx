@@ -62,3 +62,8 @@
 %%% Каждый раздел (\section) с новой страницы
 \let\stdsection\section
 \renewcommand\section{\newpage\stdsection}
+
+%%% В введении нумерация подразделов идёт с буквой «В» (например В.1)
+\makeatletter
+\renewcommand\thesubsection{\ifnum\c@section=0{В.\arabic{subsection}}\else{\arabic{section}.\arabic{subsection}}\fi}
+\makeatother
