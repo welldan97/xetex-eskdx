@@ -14,25 +14,20 @@
 %%% Делаем содержание
 \tableofcontents
 
-%%% С новой страницы
-\newpage
 %%% Введение пишется без цифры и добавляется в содержание
 \section*{Введение}
 \addcontentsline{toc}{section}{Введение}
 Здесь текст введения.
 
-\newpage
 \section{Заголовок}
 Здесь основной текст работы\cite{BookRef, ArticleRef, LinkRef}.
 
 %%% Заключение, так же как и введение выводим без цифры, добавляем в содержание
-\newpage
 \section*{Заключение}
 \addcontentsline{toc}{section}{Заключение}
 Здесь текст заключения
 
 %%% Далее выводим библиографию
-\newpage
 %%% Исправляем ошибку библиографии - «кавычка перед тире»
 %%% http://ru-tex.livejournal.com/105178.html?thread=801498
 \catcode`"\active\def"{\relax}

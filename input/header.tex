@@ -55,3 +55,7 @@
 
 %%% Для вставки интернет ссылок, полезно в библиографии
 \usepackage{url}
+
+%%% Каждый раздел (\section) с новой страницы
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
