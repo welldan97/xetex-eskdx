@@ -56,6 +56,9 @@
 %%% Для вставки интернет ссылок, полезно в библиографии
 \usepackage{url}
 
+%%% Подподразделы(\subsubsection) не выводим в содержании
+\setcounter{tocdepth}{2}
+
 %%% Каждый раздел (\section) с новой страницы
 \let\stdsection\section
 \renewcommand\section{\newpage\stdsection}
